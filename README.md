@@ -47,6 +47,7 @@ Runtime settings persist to:
 
 Edit that file to customize stations or volume. Defaults:
 
+- `enabled`: `false`
 - `station`: `house`
 - `volume`: `45`
 - `idleVolumeRatio`: `0.6`

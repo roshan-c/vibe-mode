@@ -59,7 +59,7 @@ const DEFAULT_STATIONS: Station[] = [
 ];
 
 const DEFAULT_CONFIG: Config = {
-  enabled: true,
+  enabled: false,
   station: "house",
   stations: DEFAULT_STATIONS,
   player: "mpv",
