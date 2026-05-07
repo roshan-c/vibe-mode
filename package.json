@@ -1,30 +1,21 @@
 {
   "$schema": "https://json.schemastore.org/package.json",
-  "name": "opencode-vibe-mode",
+  "name": "pi-vibe-mode",
   "version": "0.1.0",
   "type": "module",
   "private": true,
-  "description": "OpenCode TUI plugin that plays background music while agents are busy.",
+  "description": "Pi extension that plays background music while agents are busy.",
   "scripts": {
     "typecheck": "tsc --noEmit"
   },
+  "pi": {
+    "extensions": ["./src/index.ts"]
+  },
   "exports": {
-    "./tui": "./src/tui.tsx",
-    ".": "./src/tui.tsx"
+    ".": "./src/index.ts"
   },
-  "engines": {
-    "opencode": ">=1.14.41"
-  },
-  "dependencies": {
-    "@opentui/core": "^0.2.4",
-    "@opentui/solid": "^0.2.4",
-    "solid-js": "^1.9.10"
-  },
-  "peerDependencies": {
-    "@opencode-ai/plugin": ">=1.14.41"
-  },
+  "dependencies": {},
   "devDependencies": {
-    "@opencode-ai/plugin": "^1.14.41",
     "@types/node": "^24.12.2",
     "typescript": "^5.8.2"
   }
